@@ -1,3 +1,8 @@
+##################################
+###########IN PROGRESS############
+##################################
+
+
 # Install and Load Packages
 install.packages("doBy")
 library(doBy)
@@ -1205,6 +1210,8 @@ nmothrs <- summaryBy(NMOTHRS.mean ~ GEO2A_MW, FUN=weightsum, data=hhdata)
 # Create Collapsed Variable: NFATHRS
 nfathrs <- summaryBy(NFATHRS.mean ~ GEO2A_MW, FUN=weightsum, data=hhdata)
 
+
+# Merge All Household Level Variables
 mw_2008_hh <- merge(persons, urban, by="GEO2A_MW")
 mw_2008_hh <- merge(mw_2008_hh, unrel, by="GEO2A_MW")
 mw_2008_hh <- merge(mw_2008_hh, ownrshp, by="GEO2A_MW")
